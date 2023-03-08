@@ -10611,24 +10611,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/nanotech/.nuget/packages/": {}
+    "C:\\Users\\nanotech\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nanotech/Documents/dotnet_projects/FristApp/FristApp/FristApp.csproj",
+      "projectUniqueName": "F:\\Github\\FristApp\\FristApp\\FristApp.csproj",
       "projectName": "FristApp",
-      "projectPath": "/Users/nanotech/Documents/dotnet_projects/FristApp/FristApp/FristApp.csproj",
-      "packagesPath": "/Users/nanotech/.nuget/packages/",
-      "outputPath": "/Users/nanotech/Documents/dotnet_projects/FristApp/FristApp/obj/",
+      "projectPath": "F:\\Github\\FristApp\\FristApp\\FristApp.csproj",
+      "packagesPath": "C:\\Users\\nanotech\\.nuget\\packages\\",
+      "outputPath": "F:\\Github\\FristApp\\FristApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/nanotech/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\nanotech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10691,7 +10693,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

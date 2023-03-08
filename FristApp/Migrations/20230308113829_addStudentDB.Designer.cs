@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FristApp.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20230307165048_addStudentDB")]
+    [Migration("20230308113829_addStudentDB")]
     partial class addStudentDB
     {
         /// <inheritdoc />
