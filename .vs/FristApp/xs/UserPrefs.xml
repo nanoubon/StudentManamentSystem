@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{4AFF6CA7-3143-49AC-A05B-5180C7AB6AC3}|https">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FristApp/Views/Student/Index.cshtml">
+    <Files>
+      <File FileName="FristApp/Models/Student.cs" />
+      <File FileName="FristApp/Controllers/StudentController.cs" />
+      <File FileName="FristApp/Views/Student/Index.cshtml" Line="3" Column="3" />
+      <File FileName="FristApp/Views/Shared/_Layout.cshtml" />
+      <File FileName="FristApp/Views/Student/About.cshtml" />
+      <File FileName="FristApp/Program.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FristApp" expanded="True">
+            <Node name="FristApp" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="ErrorViewModel.cs" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Shared" expanded="True" />
+                <Node name="Student" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.FristApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

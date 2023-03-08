@@ -1,0 +1,28 @@
+@model IEnumerable<FristApp.Models.Student>
+
+@{
+    ViewData["Title"] = "หน้าแรก";
+}
+
+<h1 class="text-center">หน้าแรก</h1>
+
+@foreach (var student in Model)
+{
+    <p>รหัสนักเรียน : @student.Id</p>
+    <p>ชื่อนักเรียน : @student.Name</p>
+    <p>คะแนนสอบ : @student.Score</p>
+
+    @if (student.Score >= 50)
+    {
+        <strong><font color="green"> สอบผ่าน </font></strong>
+
+    }
+    else
+    {
+        <strong><font color="red"> สอบไม่ผ่าน </font></strong>
+    }
+
+    <hr />
+}
+
+
