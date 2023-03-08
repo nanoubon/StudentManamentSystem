@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using FristApp.Models;
+using FristApp.Data;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -11,6 +12,14 @@ namespace FristApp.Controllers
 {
     public class StudentController : Controller
     {
+        //Dependentcy data injection
+        private readonly ApplicationDBContext _db;
+        public StudentController(ApplicationDBContext db)
+        {
+            _db = db;
+        }
+
+
         // GET: /<controller>/
         public IActionResult Index()
         {
@@ -37,14 +46,26 @@ namespace FristApp.Controllers
             return View(allStudent);
 
         }
+        //return viwe page
         public IActionResult Create()
         {
             return View();
+        }
+        //Get method post and save data to database
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Student obj)
+        {
+            _db.Students.Add(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+
         }
         public IActionResult About()
         {
             return View();
         }
+        
 
     }
 }

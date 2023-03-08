@@ -1,7 +1,20 @@
-
+@model Student;
 @{
     ViewData["Title"] = "บันทึกคะแนนสอบ";
 }
 
 <h1 class="text-center">บันทึกคะแนนสอบ</h1>
+<div>
+    <form method="post" asp-controller="Student" asp-action="Create">
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input type="text" asp-for="Name" class="form-control my-2" />
+        </div>
+        <div>
+            <label asp-for="Score"></label>
+            <input type="number" asp-for="Score" class="form-control my-2" />
+        </div>
+        <button type="submit" class="btn btn-primary my-2"> บันทึก</button>
+    </form>
+</div>
 
