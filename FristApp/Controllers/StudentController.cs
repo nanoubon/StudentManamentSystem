@@ -52,7 +52,34 @@ namespace FristApp.Controllers
         {
             return View();
         }
-        
+
+        public IActionResult StudentEdit(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+            var obj = _db.Students.Find(id);
+            if(obj == null)
+            {
+                return NotFound();
+            }
+            return View(obj);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult StudentEdit(Student obj)
+        {
+            if (ModelState.IsValid) //Check data to will input
+            {
+                _db.Students.Update(obj);
+                _db.SaveChanges();
+                return RedirectToAction("StudentIndex");
+            }
+            return View(obj);
+
+        }
 
     }
 }

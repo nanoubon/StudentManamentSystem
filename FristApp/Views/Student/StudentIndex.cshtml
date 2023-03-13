@@ -34,7 +34,8 @@
                     <strong><font color="red">สอบไม่ผ่าน</font></strong>
                 }
             </td>
-            <td><a class="btn btn-warning">แก้ไขข้อมูล</a> <a class="btn btn-danger">ลบข้อมูล</a></td>
+            <td><a class="btn btn-warning" asp-controller="Student" asp-action="StudentEdit" asp-route-id="@student.Id">แก้ไขข้อมูล</a>
+            <a class="btn btn-danger">ลบข้อมูล</a></td>
         </tr>
         }
         </tbody>
